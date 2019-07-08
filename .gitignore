@@ -17,6 +17,9 @@ lib-cov
 # Coverage directory used by tools like istanbul
 coverage
 
+# Client built files
+client-dst/
+
 # nyc test coverage
 .nyc_output
 
@@ -38,6 +41,9 @@ jspm_packages/
 
 # TypeScript v1 declaration files
 typings/
+
+# JS files compiled from TypeScript
+server/**/*.js
 
 # Optional npm cache directory
 .npm
