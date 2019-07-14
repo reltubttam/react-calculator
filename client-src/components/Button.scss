@@ -1,33 +1,34 @@
+@import 'constants.scss';
+
 .component-button {
   display: inline-flex;
-  width: 25%;
+  width: 24%;
   flex: 1 0 auto;
+  margin: 4px 0.5%;
 }
 
 .component-button.wide {
-  width: 75%;
+  width: 74%;
 }
 
 .component-button button {
-  background-color: #e0e0e0;
+  border-radius: 10px;
+  background-color: $tertiary_color;
   border: 0;
   font-size: 1.5rem;
-  margin: 0 1px 0 0;
   flex: 1 0 auto;
-  padding: 0;
+  padding: 10px;
+  color: button_text_color;
 }
 
 .component-button:last-child button {
   margin-right: 0;
 }
 
-.component-button.operator button {
-  background-color: #f5923e;
-  color: white;
-}
-
 .component-button.numeric button {
-  background-color:red;
-  color: white;
+  background-color:$primary_color;
 }
 
+.component-button.operator button {
+  background-color: $secondary_color;
+}
